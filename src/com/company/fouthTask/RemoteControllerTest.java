@@ -9,5 +9,7 @@ public class RemoteControllerTest {
         remoteController.checkIfDeviceConnected();
         remoteController.disconnectDevice();
         remoteController.checkIfDeviceConnected();
+        remoteController.connectDevice();
+        remoteController.checkIfDeviceConnected();
     }
 }

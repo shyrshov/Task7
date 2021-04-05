@@ -44,7 +44,7 @@ public class RemoteController implements Device, Volume {
         }
 
         public void connectDevice() {
-            TVDevice tvDevice = new TV("LG", false, 10,10);
+            tvDevice = new TV("LG", false, 10,10);
         }
 
         public void disconnectDevice() {
