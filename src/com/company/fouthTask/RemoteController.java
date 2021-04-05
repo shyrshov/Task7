@@ -2,7 +2,8 @@ package com.company.fouthTask;
 
 public class RemoteController implements Device, Volume {
 
-    private TVDevice tvDevice = new TV();
+    private TVDevice tvDevice;
+
 
     public RemoteController(TV tvDevice) {
         this.tvDevice = tvDevice;
@@ -43,8 +44,8 @@ public class RemoteController implements Device, Volume {
             tvDevice.mute();
         }
 
-        public void connectDevice() {
-            tvDevice = new TV("LG", false, 10,10);
+        public void connectDevice(TVDevice tvDevice) {
+            this.tvDevice = tvDevice;
         }
 
         public void disconnectDevice() {
