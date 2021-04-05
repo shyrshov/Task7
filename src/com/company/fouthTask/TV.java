@@ -4,6 +4,10 @@ public class TV extends TVDevice{
 
     private int volumeLevel;
     private int channelNumber;
+    public TV() {
+
+    }
+
     public TV(String modelName, boolean isOn, int volumeLevel, int channelNumber) {
         super(modelName, isOn);
         this.volumeLevel = volumeLevel;
@@ -33,9 +37,9 @@ public class TV extends TVDevice{
     }
 
     @Override
-    public void currentChannel(int channel) {
+    public void currentChannel() {
         if (isOn) {
-            System.out.println("Current channel is " + channel);
+            System.out.println("Current channel is " + channelNumber);
         } else {
             throw new IllegalArgumentException("Please, turn TV ON");
         }

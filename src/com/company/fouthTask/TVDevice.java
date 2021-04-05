@@ -1,8 +1,12 @@
 package com.company.fouthTask;
 
 abstract class TVDevice implements Volume, Device{
-    String modelName;
-    boolean isOn;
+    protected String modelName;
+    protected boolean isOn;
+
+    public TVDevice () {
+
+    }
 
     public TVDevice(String modelName, boolean isOn) {
         this.modelName = modelName;
